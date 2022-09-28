@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="Lightblue">
+    <h1>Day-2 React Interview Questions</h1>
+    <h2>Q1. What is the Difference between react and react native? Which one is library or framework?</h2>
+     <h2>React :-</h2>
+     <ul>
+      <li>React and React Native are developed by Facebook and have gained a huge fan base in a short time. React is known as ReactJs, which is a JavaScript library to build single-page web applications.</li>
+      <li>React is a JavaScript library of reusable components designed to create skeletons of the apps.</li>
+      <li>React is an open-source JS library for building the UIs for web applications</li>
+      <li>React, originally developed by and still maintained by Facebook and supported by an active open source community, is in fact a JS 'library'. </li>
+     </ul>
+     <h2>React Native :-</h2>
+     <ul>
+      <li> React Native is a React JS-based framework to design mobile apps. Moreover, with reusable components, you can develop native mobile applications.</li>
+      <li> React Native is designed to build native mobile apps with reusable components.</li>
+      <li>React Native is used to build rich mobile UI from declarative components using only JavaScript.</li>
+      <li>React Native is a JavaScript framework for writing real, natively rendering mobile applications for iOS and Android. </li>
+     </ul>
+     <hr/>
+
+    <h2>Q2. What is the package name you are using for routing?</h2>
+     <p><strong>React Router DOM</strong> is an npm package that enables you to implement dynamic routing in a web app. It allows you to display pages and allow users to navigate them.</p>
+     <hr/>
+     
+    <h2>Q3. Routing Implementation?</h2>
+     <p>
+        <strong>Step 1: Install react-router-dom  : </strong>
+         npm install react-router-dom <br/> <br/>
+        <strong>    Step 2: Importing react-router-dom in our project  :</strong>
+         In the above code, we have wrapped our "App" component with "BrowserRouter" which enables us to use Html 5 history API. <br/><br/>
+        <strong>Step 3: Implement Routing : </strong>
+        In app.js we need to implement Routers cases with various routes.
+        Each Route component needs two mandatory props and that is the path and the component to render.
+     </p>
+     <hr/>
+
+    <h2>Q4. How do you pass data from parent to child?</h2>
+     <p>
+       React.js allows us to use props (short form of property) to pass
+       data from parent component to child component. We have to set props
+       value inside the child component, while we embed it to the parent
+       component.
+     </p>
+     <hr/>
+
+    <h2>Q5. What is lazy loading in react?</h2>
+     <p>Lazy loading is the technique of rendering only-needed or critical user interface items first, then quietly unrolling the non-critical items later. It is now fully integrated into core react library itself.</p>
+   
+     <hr/>
+
+    <h2>Q6. Difference b/w stateless and Stateful Component</h2>
+     <h2>StateLess</h2>
+     <p>
+     If the behaviour is independent of its state then it can be a stateless
+     component. You can use either a function or a class for creating
+     stateless components. But unless we need to use a lifecycle hook in your
+     components, we should go for function components. There are a lot of
+     benefits if you decide to use function components here; they are easy to
+     write, understand, and test, a little faster, and you can avoid the this
+     keyword altogether.
+     </p>
+    <h2>StateFul</h2>
+    <p>
+     If the behaviour of a component is dependent on the state of the
+     component then it can be termed as stateful component. These stateful
+     components are always class components and have a state that gets
+     initialized in the constructor. class App extends Component{" "}
+    </p>
+    <hr/>
+
+   <h2>Q7. How do you switch one component to another, Conditional Rendering</h2>
+    <p>
+    Way to Switch/Navigate from one page to another page ,Link, NavLink,
+    Redirect Component ,history.push, history.replace Link Link is used to
+    manage the navigation and it worked as an anchor tag. Check below code
+    for the demonstration. import "Link" from 'react-router-dom'; ... ...
+    About NavLink NavLink behaves the same as Link but in addition, it comes
+    with a new attribute called “activeClassName” which helps us to add the
+    class to the anchor tag when page url will match. import "NavLink" from
+    'react-router-dom'; ... ... About
+    </p>
+</body>
+</html>
